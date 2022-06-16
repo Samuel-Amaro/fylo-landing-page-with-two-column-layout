@@ -7,62 +7,115 @@
   <meta name="description" content="Fylo landing page with two column layout"/>
   <meta name="author" content="Samuel Amaro"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <!--icons font-awesome-->
+  <script src="https://kit.fontawesome.com/4cfa17c069.js" crossorigin="anonymous"></script>
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <!--css-->
+  <link href="./css/normalize.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 <body>
 
-  Features
-  Team
-  Sign In
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="block-main">
+    <header class="block-main__header">
+      <div class="block-main__logo-top">
+        <img src="images/logo.svg" alt="Logo Fylo"/>
+      </div>
+      <nav class="block-main__menu-nav-top">
+        <a href="#features" target="_self" rel="next" class="block-main__item-menu-top">Features</a>
+        <a href="#team" target="_self" rel="next" class="block-main__item-menu-top">Team</a>
+        <a href="#sign-in" target="_self" rel="next" class="block-main__item-menu-top">Sign In</a>
+      </nav>
+    </header>
+    <main class="block-main__content-main">
+      <div class="block-main__section-intro" id="features">
+        <article class="block-main__text-intro">
+          <h1 class="block-main__title-intro">All your files in one secure location, accessible anywhere.</h1>
+          <p class="block-main__description-intro">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+          <form class="block-main__form-intro">
+            <input type="email" class="block-main__input-email-top" placeholder="Enter your email..." name="email"/>
+            <input type="button" class="block-main__btn-get-start" name="btn-get-started" value="Get Started"/>
+          </form>
+        </article>
+        <aside class="block-main__side-content-intro">
+          <img src="./images/illustration-1.svg" alt="Image ilustration" class="block-main__img"/>
+        </aside>
+      </div>
+      <div class="block-main__section-featured" id="team">
+        <article class="block-main__text-featured">
+          <h2 class="block-main__title-featured">Stay productive, wherever you are</h2>
+          <p class="block-main__description-featured">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p class="block-main__description-featured">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+          <a href="#works" target="_self" rel="next" class="block-main__link-fylo-works">See how Fylo works <span class="block-main__icon-link"></span></a>
+          <div class="block-main__testimonial">
+            <img src="./images/icon-quotes.svg" alt="icon quotes"/>
+            <p class="block-main__text-testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="block-main__profile">
+              <img src="./images/avatar-testimonial.jpg" alt="image profile user" class="block-main__image-profile"/>
+              <div class="block-main__data-profile">
+                <h4 class="block-main__name-user">Kyle Burton</h4>
+                <p class="block-main__activity-user">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <aside class="block-main__side-content-featured">
+          <img src="./images/illustration-2.svg" alt="Image ilustration" class="block-main__img"/>
+        </aside>
+      </div>
+      <div class="block-main__section-sign-up" id="sign-in">
+        <article class="block-main__text-sign">
+          <h3 class="block-main__title-sign">Get early access today</h3>
+          <p class="block-main__description-sign">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </article>
+        <aside class="block-main__side-sign">
+          <form class="block-main__form-sign">
+            <input type="email" class="block-main__input-email" placeholder="email@example.com" name="email-sign"/>
+            <input type="button" class="block-main__btn-get-start" name="btn-get-started" value="Get Started For Free"/>
+          </form>
+        </aside>
+      </div>
+    </main>
+    <footer class="block-main__footer">
+      <img src="./images/logo.svg" alt="logo fylo" class="block-main__logo-footer"/>
+      <div class="block-main__navs-links">
+        <address class="block-main__contact">
+          <p class="block-main__phone-contact">
+            <img src="./images/icon-phone.svg" alt="icon phone" class="block-main__icon-contact"/>
+            <a href="tel:+1-543-123-4567" target="_self" rel="next" class="block-main__text-contact">Phone: +1-543-123-4567</a>
+          </p>
+          <p class="block-main__email-contact">
+            <img src="./images/icon-email.svg" alt="icon email" class="block-main__icon-contact"/>
+            <a href="mailto:example@fylo.com" target="_self" rel="next" class="block-main__text-contact">example@fylo.com</a>
+          </p>
+        </address>
+        <nav class="block-main__nav-footer">
+          <a href="#about" target="_self" rel="next" class="block-main__item-nav">About Us</a>
+          <a href="#jobs" target="_self" rel="next" class="block-main__item-nav">Jobs</a>
+          <a href="#press" target="_self" rel="next" class="block-main__item-nav">Press</a>
+          <a href="#blog" target="_self" rel="next" class="block-main__item-nav">Blog</a>
+        </nav>
+        <nav class="block-main__nav-footer">
+          <a href="#contact" target="_self" rel="next" class="block-main__item-nav">Contact Us</a>
+          <a href="#terms" target="_self" rel="next" class="block-main__item-nav">Terms</a>
+          <a href="#privacy" target="_self" rel="next" class="block-main__item-nav">Privacy</a>
+        </nav>
+        <nav class="block-main__nav-social-media">
+          <a href="#facebook" target="_blank" rel="external" class="block-main__item-nav-social">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#twitter" target="_blank" rel="external" class="block-main__item-nav-social">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#instagram" target="_blank" rel="external" class="block-main__item-nav-social">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
