@@ -36,6 +36,117 @@ body{
     max-width: 100%;
 }
 
+/**HEADER**/
+
 .block-main__header{
-    
+    padding: 50px 50px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.block-main__menu-nav-top{
+    justify-self: flex-end;
+    display: flex;
+    gap: 50px;
+}
+
+.block-main__item-menu-top{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem; /*22px or 24px*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400px;
+}
+
+/**SECTION INTRO**/
+
+.block-main__section-intro{
+    padding: 45px 45px 0 45px;
+    margin-bottom: 180px;
+}
+
+.block-main__side-content-intro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.block-main__side-content-intro img{
+    display: block;
+    width: 95%;
+}
+
+.block-main__text-intro{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-main__title-intro{
+    font-size: 3rem; /*48px*/
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    width: 630px;
+}
+
+.block-main__description-intro{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 58px;
+}
+
+.block-main__form-intro{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.block-main__input-email-top{
+    box-sizing: border-box;
+    display: block;
+    width: 660px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    font-size: 1.5rem; /*24px*/
+    /*padding: 24px 0 24px 40px;*/
+    padding-left: 40px;
+    height: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: var(--light-gray);
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+
+.block-main__btn-get-start{
+    box-sizing: border-box;
+    display: block;
+    width: 660px;
+    background-color: var(--bright-blue);
+    border: none;
+    color: var(--light-grayish-blue);
+    font-size: 1.7rem; /*24px*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 24px 0;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/**SECTION FEATURED**/
+
+.block-main__section-featured{
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain; /*450% 100%*/
+    padding: 60px 0 0 0;
 }
