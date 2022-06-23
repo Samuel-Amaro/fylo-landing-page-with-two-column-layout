@@ -180,9 +180,7 @@ body{
     width: 620px;
 }
 
-.block-main__description-featured:nth-child(3){
-    margin-bottom: 80px;
-}
+.block-main__description-featured:nth-child(3){ margin-bottom: 80px; }
 
 .block-main__link-fylo-works{
     font-size: 1.5rem;
@@ -366,9 +364,7 @@ body{
     margin-bottom: 100px;
 }
 
-.block-main__nav-footer:nth-child(3){
-    margin-bottom: 100px;
-}
+.block-main__nav-footer:nth-child(3){ margin-bottom: 100px; }
 
 .block-main__item-nav{
     display: block;
@@ -400,4 +396,166 @@ body{
     align-items: center;
     border-radius: 50%;
     text-align: center;
+}
+
+/**breakpoint 681px ou menos**/
+@media screen and (max-width: 681px) {
+
+    .block-main__title-featured{
+        width: auto;
+        margin: 0 0 55px 0;
+        font-size: 1.5rem;
+    }
+
+    .block-main__description-featured{ 
+        width: auto;
+        font-size: 1.1rem; 
+    }
+
+    .block-main__header{
+        padding: 50px 20px 0 20px;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+        justify-items: center;
+    }
+
+    .block-main__menu-nav-top{
+        justify-self: auto;
+        display: flex;
+        gap: 30px;
+    }
+
+    .block-main__item-menu-top{ font-size: 1.1rem; }
+
+    .block-main__title-intro{
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .block-main__description-intro{
+        font-size: 1.3rem;
+        width: auto;
+    }
+
+    .block-main__form-intro{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block-main__input-email-top{
+        width: auto;
+        font-size: 1.1rem;
+        padding-left: 10px;
+        height: 60px;
+    }
+    
+    .block-main__btn-get-start{
+        width: auto;
+        font-size: 1.1rem;
+        padding: 14px 0;
+        height: 60px;
+    }
+
+    .block-main__section-featured{
+        background-image: url(../images/bg-curve-mobile.svg);
+        background-size: 650% 100%;
+    }
+
+    .block-main__conteiner-link-works{
+        display: grid;
+        grid-template-columns: minmax(min-content, 210px);
+        align-items: center;
+        margin-bottom: 75px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .block-main__link-fylo-works{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .block-main__testimonial{
+        width: auto;
+        margin: 0 0;
+    }
+
+    .block-main__title-sign{ font-size: 1.5rem; }
+
+    .block-main__description-sign{
+        font-size: 1.1rem;
+        width: auto;
+    }
+
+    .block-main__section-sign-up{ padding: 110px 30px 140px 30px; }
+
+    .block-main__form-sign{
+        display: grid;
+        grid-template-columns: minmax(min-content, 250px);
+    }
+
+    .block-main__input-email{
+        width: auto;
+        padding: 20px 0px 20px 20px;
+        font-size: 1.1rem; 
+        height: 60px;
+    }
+
+    .block-main__text-testimonial{ font-size: 1rem; }
+
+    .block-main__name-user{ font-size: 1rem; }
+
+    .block-main__logo-footer{ width: auto; }
+
+    .block-main__footer{ padding: 130px 20px 134px 30px; }
+
+    .block-main__text-contact{ font-size: 1.1rem; }
+
+    .block-main__phone-contact 
+    .block-main__icon-contact, 
+    .block-main__icon-contact{ width: auto; }
+
+    .block-main__phone-contact, 
+    .block-main__email-contact{ gap: 20px; }
+
+    .block-main__item-nav{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .block-main__contact{ margin-bottom: 100px; }
+
+    .block-main__item-nav-social{
+        font-size: 1.2rem;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/**BREAKPOINT 1000px ou mais**/
+@media screen and (min-width: 1000px) {
+    .block-main__header{ padding: 70px 80px 0 80px; }
+
+    .block-main__item-menu-top{
+        font-size: 1.1rem;
+    }
+
+    .block-main__section-intro{
+        padding: 45px 45px 0 45px;
+        margin-bottom: 180px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .block-main__side-content-intro{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+
 }
