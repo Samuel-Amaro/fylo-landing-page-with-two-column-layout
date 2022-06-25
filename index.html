@@ -38,9 +38,9 @@
         <article class="block-main__text-intro">
           <h1 class="block-main__title-intro">All your files in one secure location, accessible anywhere.</h1>
           <p class="block-main__description-intro">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-          <form class="block-main__form-intro">
-            <input type="email" class="block-main__input-email-top" placeholder="Enter your email..." name="email"/>
-            <input type="button" class="block-main__btn-get-start" name="btn-get-started" value="Get Started"/>
+          <form method="post" autocomplete="on" enctype="application/x-www-form-urlencoded" accept-charset="utf-8" class="block-main__form-intro" target="_self">
+            <input type="email" class="block-main__input-email-top" placeholder="Enter your email..." name="email" required/>
+            <input type="submit" class="block-main__btn-get-start" name="btn-get-started" value="Get Started"/>
           </form>
         </article>
       </div>
@@ -76,9 +76,9 @@
           <p class="block-main__description-sign">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
         </article>
         <aside class="block-main__side-sign">
-          <form class="block-main__form-sign">
-            <input type="email" class="block-main__input-email" placeholder="email@example.com" name="email-sign"/>
-            <input type="button" class="block-main__btn-get-start block-main--modifier" name="btn-get-started" value="Get Started For Free"/>
+          <form method="post" enctype="application/x-www-form-urlencoded" accept-charset="utf-8" autocomplete="on"  class="block-main__form-sign">
+            <input type="email" class="block-main__input-email" placeholder="email@example.com" name="email-sign" required/>
+            <input type="submit" class="block-main__btn-get-start block-main--modifier" name="btn-get-started" value="Get Started For Free"/>
           </form>
         </aside>
       </div>
@@ -121,5 +121,6 @@
       </div>
     </footer>
   </div>
+  
 </body>
 </html>

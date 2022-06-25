@@ -398,6 +398,34 @@ body{
     text-align: center;
 }
 
+input[type="email"]:focus{
+    outline: none;
+}
+
+/**ACTIVE STATES**/
+
+.block-main__btn-get-start:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.block-main__item-nav:hover, .block-main__item-nav-social:hover{
+    color: var(--bright-blue);
+    border-color: var(--bright-blue);
+}
+
+.block-main__link-fylo-works:hover{ opacity: 0.6; }
+
+/**FORM VALIDATION**/
+
+input[type="email"]:invalid{
+    border: 1px solid red;
+}
+
+input[type="email"]:valid{
+    border: 1px solid greenyellow;
+}
+
 /**breakpoint 681px ou menos**/
 @media screen and (max-width: 681px) {
 
@@ -540,10 +568,10 @@ body{
 /**BREAKPOINT 1000px ou mais**/
 @media screen and (min-width: 1000px) {
     .block-main__section-featured{          
-        background-size: 550% 100%; 
+        background-size: 350% 100%; 
         display: grid;
-        grid-template-columns: minmax(min-content, 655px) 1fr;
-        padding: 180px 80px 165px 80px;
+        grid-template-columns: minmax(min-content, 1fr) 1fr;/*minmax(min-content, 655px)*/
+        padding: 150px 80px 115px 80px;
     }
     
     .block-main__header{ 
@@ -557,7 +585,7 @@ body{
         padding: 45px 80px 0 80px;
         margin-bottom: 180px;
         display: grid;
-        grid-template-columns: minmax(min-content, 600px) 1fr;
+        grid-template-columns: minmax(min-content, 1fr) 1fr; /*minmax(min-content, 600px)*/
         align-items: center;
         justify-content: center;
         justify-items: center;   
@@ -579,8 +607,6 @@ body{
 
     .block-main__description-intro{
         font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.5;
         text-align: left;
         width: auto;
         padding: 0 20px 0 0;
@@ -596,6 +622,7 @@ body{
     .block-main__form-intro{
         display: flex;
         flex-flow: row wrap;
+        gap: 15px;
     }
 
     .block-main__input-email-top{
@@ -604,7 +631,7 @@ body{
         height: auto;
         padding: 15px 0 10px 20px;
         border-radius: 3px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     
     .block-main__btn-get-start{
@@ -613,7 +640,8 @@ body{
         font-size: 0.9rem;
         padding: 15px 60px;
         border-radius: 3px;
-        margin-left: 15px;
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 
     .block-main__side-content-featured{
@@ -631,10 +659,10 @@ body{
 
     .block-main__description-featured{
         font-size: 1rem;
-        line-height: 1.5;
         text-align: left;
         margin-bottom: 18px;
-        width: 520px;
+        width: auto;
+        padding-right: 110px;
         color: rgb(0, 0, 0);
     }
 
@@ -655,24 +683,23 @@ body{
     .block-main__icon-link{
         text-decoration: none;
         padding: 0 0 0 0;
-        width: 16px;
-        height: 16px;
+        width: 8px;
+        height: 8px;
     }
 
     .block-main__testimonial{
-        width: 350px;
+        width: 340px;
         margin: 0 0;
-        padding: 25px 20px 45px 30px;
+        padding: 30px 35px 30px 35px;
         border-radius: 8px;
         box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.1);
     }
 
     .block-main__text-testimonial{
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: 1.7;
-        margin-bottom: 25px;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
         letter-spacing: normal;
+        font-weight: 500;
     }
 
     .block-main__icon-quotes{
@@ -680,5 +707,122 @@ body{
         width: 15px;
         height: 15px;
         margin-bottom: 10px;
+    }
+
+    .block-main__image-profile{ width: 30px; }
+
+    .block-main__name-user{
+        font-size: 0.7rem; 
+        letter-spacing: normal;
+        margin-bottom: 4px;
+    }
+
+    .block-main__activity-user{
+        font-size: 0.5rem;
+        letter-spacing: normal;
+    }
+
+    .block-main__profile{ gap: 10px; }
+
+    .block-main__section-sign-up{
+        padding: 110px 80px 90px 80px;
+        display: grid;
+        grid-template-columns: minmax(min-content, 490px) minmax(min-content, 480px);
+        gap: 18%;
+    }
+
+    .block-main__text-sign{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+    
+    .block-main__title-sign{
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .block-main__description-sign{
+        font-size: 1rem;
+        text-align: left;
+        width: auto;
+    }
+
+    .block-main__input-email{
+        width: 100%;
+        height: auto;
+        padding: 14px 0px 18px 20px;
+        font-size: 0.8rem; 
+    }
+
+    .block-main--modifier{
+        width: 200px;
+        margin: 0;
+        padding: 15px 20px;
+    }
+
+    .block-main__form-sign{
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .block-main__footer{ padding: 110px 80px 80px 80px; }
+
+    .block-main__logo-footer{
+        width: 170px;
+        margin-bottom: 25px;
+    }
+
+    .block-main__text-contact{ font-size: 1rem; }
+    
+    .block-main__icon-contact{ width: auto; }
+    
+    .block-main__phone-contact .block-main__icon-contact{ width: auto; }
+
+    .block-main__phone-contact, 
+    .block-main__email-contact{ gap: 20px; }
+
+    .block-main__phone-contact{ margin-bottom: 20px; }
+
+    .block-main__contact{
+        margin-bottom: 0px;
+        font-style: normal;
+    }
+
+    .block-main__nav-footer{ margin-bottom: 0px; }
+    
+    .block-main__nav-footer:nth-child(3){ margin-bottom: 0px; }
+    
+    .block-main__item-nav{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .block-main__item-nav-social{
+        font-size: 1rem;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .block-main__navs-links{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15%;
+    }
+}
+
+/**BREAKPOINT DE 1000PX and 1132PX para footer**/
+@media screen and (min-width: 1000px) and (max-width: 1132px) {
+    .block-main__navs-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0;
+        justify-content: center;
+        justify-items: center;
     }
 }
