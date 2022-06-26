@@ -570,7 +570,7 @@ input[type="email"]:valid{
     .block-main__section-featured{          
         background-size: 350% 100%; 
         display: grid;
-        grid-template-columns: minmax(min-content, 1fr) 1fr;/*minmax(min-content, 655px)*/
+        grid-template-columns: minmax(min-content, 1.1fr) 1fr;/*minmax(min-content, 655px)*/
         padding: 150px 80px 115px 80px;
     }
     
