@@ -10,11 +10,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -43,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository Project](https://github.com/Samuel-Amaro/fylo-landing-page-with-two-column-layout)
+- Live Site URL: [Result Live](https://samuel-amaro.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
